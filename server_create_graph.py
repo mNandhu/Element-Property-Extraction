@@ -32,7 +32,7 @@ graph_documents = llm_transformer.convert_to_graph_documents(chunks)
 print(graph_documents[0])
 
 # Save Graph Documents
-with open("Nodes.bin", "wb") as f:  # Save graph_docs obj to file
+with open("graphs_archive/Nodes.bin", "wb") as f:  # Save graph_docs obj to file
     pickle.dump(graph_documents, f)
     
 
